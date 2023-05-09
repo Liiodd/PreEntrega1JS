@@ -4,8 +4,11 @@ function calcularPrecio() {
     var cuotas = parseInt(document.querySelector('input[name="cuotas"]:checked').value);
     var envio = 0; // Valor del envío
     
-    // Calcular interés según la cantidad de cuotas
+    // Calcular interés según la cantidad de cuotas o  descuento pago en efectivo
     switch (cuotas) {
+      case 1:
+        interes = -0.08; // dev. 8%
+        break;
       case 3:
         interes = 0.05; // 5%
         break;

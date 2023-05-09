@@ -2,19 +2,24 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Samsung</title>
+	<title>Yo prefiero iPhone, pero Samsung es mas barato</title>
 </head>
 <body>
-	<h1>Llevate tu Samsung en cuotas!</h1>
+	<h1>Llevate el Samsung de tus sueños!!</h1>
 	<p>Selecciona tu modelo preferido</p>
 	<select id="producto">
 		<option value="349000">Celular Samsung Galaxy S23 256/8GB - $349.000</option>
 		<option value="429999">Celular Samsung Galaxy S23 Plus 256/8GB - $429.999</option>
 		<option value="489000">Celular Samsung Galaxy S23 Ultra 256/8GB - $489.000</option>
-        <option value="185000">Celular Galaxy A54 5G Awesome Graphite 256/8GB - $185.000</option>
+        <option value="185000">Celular Samsung Galaxy A54 5G Awesome Graphite 256/8GB - $185.000</option>
 	</select>
 	<br><br>
-	<p><b>Cantidad de cuotas:</b></p>
+	<p><b>Como te gustaria abonar?</b></p>
+	<p>En un pago (ya sea efectivo, debito o credito tenes un 8% de descuento)<br>
+	   Tambien podés pagar en tres, seis o doce cuotas!</p>
+	
+	<input type="radio" id="efectivo" name="cuotas" value="1">
+	<label for="efectivo">Efectivo - 8% OFF</label><br>
 	<input type="radio" id="tresCuotas" name="cuotas" value="3">
 	<label for="tresCuotas">3 cuotas - 5% de Interés</label><br>
 	<input type="radio" id="seisCuotas" name="cuotas" value="6">
@@ -34,7 +39,7 @@
 	<button onclick="calcularPrecio()">Calcular precio final</button>
 	<br><br>
 	<p><b>El precio final del producto es: <span id="precioFinal"></span></b></p>
-	<script src="JavaScript/js"></script>
+	<script src="JS/miarchivo.js"></script>
 </body>
 </html>
 
