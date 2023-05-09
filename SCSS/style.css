@@ -2,9 +2,17 @@ body {
   background-color: antiquewhite;
   justify-content: center;
   text-align: center;
+  border: solid 2px blueviolet;
+  border-radius: 50px 50px 50px 50px;
+  margin-top: 20px;
 }
 
 h1 {
-  color: blue;
+  color: blueviolet;
   font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+h1:hover {
+  cursor: pointer;
+  color: blue;
 }/*# sourceMappingURL=style.css.map */
