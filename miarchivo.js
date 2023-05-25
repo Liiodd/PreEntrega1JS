@@ -1,14 +1,21 @@
 // Definición de la clase Usuario
 class Usuario {
-    constructor(nombre, edad) {
-      this.nombre = nombre;
-      this.edad = edad;
-    }
-  
-    saludar() {
-      return `¡Hola ${this.nombre}! Tienes ${this.edad} años.`;
-    }
+  constructor(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
   }
+
+  saludar() {
+    let mensaje = `¡Hola ${this.nombre}! Te estábamos esperando. Tienes ${this.edad} años.`;
+    if (this.edad > 40) {
+      mensaje += ' 👴';
+    } else {
+      mensaje += ' 😄';
+    }
+    return mensaje;
+  }
+}
+
   
   // Array para almacenar los usuarios registrados
   const usuarios = [];
